@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textview_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonSelectCoffee"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="150dp"
+            android:layout_weight="1"
+            android:text="コーヒー注文"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="77dp" />
+
+        <Button
+            android:id="@+id/buttonOrderHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="150dp"
+            android:layout_weight="1"
+            android:text="購入履歴"
+            tools:layout_editor_absoluteX="170dp"
+            tools:layout_editor_absoluteY="77dp" />
+
+        <Button
+            android:id="@+id/buttonOrderModify"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="150dp"
+            android:layout_weight="1"
+            android:text="訂正履歴" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

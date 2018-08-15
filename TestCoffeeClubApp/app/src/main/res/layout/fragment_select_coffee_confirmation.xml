@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textOrderTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="20dp"
+            android:text="注文内容" />
+
+        <TextView
+            android:id="@+id/TextUserNameTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textOrderTemp"
+            android:layout_below="@+id/textOrderTemp"
+            android:layout_marginTop="20dp"
+            android:text="ユーザ名" />
+
+        <TextView
+            android:id="@+id/textCoffeeKindTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textOrderTemp"
+            android:layout_below="@+id/TextUserNameTemp"
+            android:layout_marginTop="20dp"
+            android:text="コーヒーの種類" />
+
+        <TextView
+            android:id="@+id/textCoffeeSizeTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textOrderTemp"
+            android:layout_below="@+id/textCoffeeKindTemp"
+            android:layout_marginTop="20dp"
+            android:text="杯数" />
+
+        <TextView
+            android:id="@+id/textValueTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textOrderTemp"
+            android:layout_below="@+id/textCoffeeSizeTemp"
+            android:layout_marginTop="50dp"
+            android:text="合計金額" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="620dp"
+            android:layout_marginTop="20dp"
+            android:text="注文内容" />
+
+        <TextView
+            android:id="@+id/TextUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textOrder"
+            android:layout_below="@+id/textOrder"
+            android:layout_marginTop="20dp"
+            android:text="ユーザ名" />
+
+        <TextView
+            android:id="@+id/textCoffeeKind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textOrder"
+            android:layout_below="@+id/TextUserName"
+            android:layout_marginTop="20dp"
+            android:text="コーヒーの種類" />
+
+        <TextView
+            android:id="@+id/textCoffeeSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textOrder"
+            android:layout_below="@+id/textCoffeeKind"
+            android:layout_marginTop="20dp"
+            android:text="杯数" />
+
+        <TextView
+            android:id="@+id/textSum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textOrder"
+            android:layout_below="@+id/textCoffeeSize"
+            android:layout_marginTop="50dp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textSum"
+            android:layout_alignTop="@+id/textSum"
+            android:layout_marginEnd="-80dp"
+            android:text="円" />
+
+        <Button
+            android:id="@+id/buttonNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textOrder"
+            android:layout_below="@+id/textSum"
+            android:layout_marginTop="150dp"
+            android:text="いいえ" />
+
+        <Button
+            android:id="@+id/buttonYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/buttonNo"
+            android:layout_alignTop="@+id/buttonNo"
+            android:layout_marginStart="-100dp"
+            android:text="はい" />
+
+        <TextView
+            android:id="@+id/textview_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/buttonNo"
+            android:layout_alignTop="@+id/buttonNo"
+            android:layout_marginEnd="350dp"
+            android:layout_marginTop="10dp"
+            android:text="TextView" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="300dp"
+            android:text="上記の注文内容でよろしいですか。"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

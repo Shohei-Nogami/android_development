@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textUserNameTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:text="ユーザ名" />
+
+        <Button
+            android:id="@+id/buttonUser1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textUserNameTemp"
+            android:layout_below="@+id/textUserNameTemp"
+            android:layout_marginTop="20dp"
+            android:text="@string/user1" />
+
+        <Button
+            android:id="@+id/buttonUser2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/buttonUser1"
+            android:layout_below="@+id/buttonUser1"
+            android:layout_marginTop="10dp"
+            android:text="@string/user2" />
+
+        <Button
+            android:id="@+id/buttonUser3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/buttonUser2"
+            android:layout_below="@+id/buttonUser2"
+            android:layout_marginTop="10dp"
+            android:text="@string/user3" />
+
+        <Button
+            android:id="@+id/buttonUser4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/buttonUser3"
+            android:layout_below="@+id/buttonUser3"
+            android:layout_marginTop="10dp"
+            android:text="@string/user4" />
+
+        <Button
+            android:id="@+id/buttonUser5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/buttonUser4"
+            android:layout_below="@+id/buttonUser4"
+            android:layout_marginTop="10dp"
+            android:text="@string/user5" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAlignment="inherit">
+
+        <TextView
+            android:id="@+id/textModifyTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="230dp"
+            android:layout_marginTop="20dp"
+            android:text="訂正注文" />
+
+        <EditText
+            android:id="@+id/editTextModifyDaily"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="false"
+            android:layout_alignStart="@+id/textModifyTemp"
+            android:layout_alignTop="@+id/textModifyTemp"
+            android:layout_marginTop="50dp"
+            android:ems="20"
+            android:inputType="textPersonName"
+            android:text="2018,8,14" />
+
+        <EditText
+            android:id="@+id/textModifyValue"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editTextModifyDaily"
+            android:layout_alignTop="@+id/editTextModifyDaily"
+            android:layout_marginStart="200dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="50" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textModifyValue"
+            android:layout_alignTop="@+id/textModifyValue"
+            android:layout_marginEnd="-20dp"
+            android:layout_marginTop="10dp"
+            android:text="円" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="400dp"
+            android:text="戻る" />
+
+        <Button
+            android:id="@+id/buttonModifying"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/buttonBack"
+            android:layout_alignTop="@+id/buttonBack"
+            android:layout_marginStart="620dp"
+            android:layout_marginTop="0dp"
+            android:text="確定" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/buttonBack"
+            android:layout_alignTop="@+id/buttonBack"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="15dp"
+            android:text="TextView" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

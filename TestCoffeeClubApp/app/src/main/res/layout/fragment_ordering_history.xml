@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textUserNameTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:text="ユーザ名" />
+
+        <Button
+            android:id="@+id/buttonUser1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textUserNameTemp"
+            android:layout_below="@+id/textUserNameTemp"
+            android:layout_marginTop="20dp"
+            android:text="@string/user1" />
+
+        <Button
+            android:id="@+id/buttonUser2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/buttonUser1"
+            android:layout_below="@+id/buttonUser1"
+            android:layout_marginTop="10dp"
+            android:text="@string/user2" />
+
+        <Button
+            android:id="@+id/buttonUser3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/buttonUser2"
+            android:layout_below="@+id/buttonUser2"
+            android:layout_marginTop="10dp"
+            android:text="@string/user3" />
+
+        <Button
+            android:id="@+id/buttonUser4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/buttonUser3"
+            android:layout_below="@+id/buttonUser3"
+            android:layout_marginTop="10dp"
+            android:text="@string/user4" />
+
+        <Button
+            android:id="@+id/buttonUser5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/buttonUser4"
+            android:layout_below="@+id/buttonUser4"
+            android:layout_marginTop="10dp"
+            android:text="@string/user5" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAlignment="inherit">
+
+        <TextView
+            android:id="@+id/textOrderHistoryTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="230dp"
+            android:layout_marginTop="20dp"
+            android:text="購入履歴"
+            tools:layout_editor_absoluteX="79dp" />
+
+        <TextView
+            android:id="@+id/textOrderHistory"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_alignStart="@+id/textOrderHistoryTemp"
+            android:layout_alignTop="@+id/textOrderHistoryTemp"
+            android:layout_marginTop="50dp"
+            android:scrollHorizontally="true"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            android:text="TextView" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAlignment="inherit">
+
+        <TextView
+            android:id="@+id/textChageMonthTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="580dp"
+            android:layout_marginTop="20dp"
+            android:text="月額請求金額"
+            tools:layout_editor_absoluteX="79dp" />
+
+        <TextView
+            android:id="@+id/textChageMonth"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_alignStart="@+id/textChageMonthTemp"
+            android:layout_alignTop="@+id/textChageMonthTemp"
+            android:layout_marginTop="50dp"
+            android:scrollHorizontally="true"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            android:text="TextView" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="400dp"
+            android:text="戻る"
+            tools:layout_editor_absoluteX="50dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/buttonBack"
+            android:layout_alignTop="@+id/buttonBack"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="15dp"
+            android:text="TextView" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">TestCoffeeClubApp</string>
+    <string name="button01">Button 01</string>
+    <string name="user1">User 1</string>
+    <string name="user2">User 2</string>
+    <string name="user3">User 3</string>
+    <string name="user4">User 4</string>
+    <string name="user5">User 5</string>
+    <string name="kind1">高いの</string>
+    <string name="kind2">安いの</string>
+    <string name="sizeBig1">マグカップ 1</string>
+    <string name="sizeBig2">マグカップ 2</string>
+    <string name="sizeBig3">マグカップ 3</string>
+    <string name="sizeSmall1">カップ 1</string>
+    <string name="sizeSmall2">カップ 2</string>
+    <string name="sizeSmall3">カップ 3</string>
+    <string name="sizeSmall4">カップ 4</string>
+    <string name="sizeSmall5">カップ 5</string>
+</resources>

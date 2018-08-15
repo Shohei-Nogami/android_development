@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textUserNameTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:text="ユーザ名" />
+
+        <Button
+            android:id="@+id/buttonUser1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textUserNameTemp"
+            android:layout_below="@+id/textUserNameTemp"
+            android:layout_marginTop="20dp"
+            android:text="@string/user1" />
+
+        <Button
+            android:id="@+id/buttonUser2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/buttonUser1"
+            android:layout_below="@+id/buttonUser1"
+            android:layout_marginTop="10dp"
+            android:text="@string/user2" />
+
+        <Button
+            android:id="@+id/buttonUser3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/buttonUser2"
+            android:layout_below="@+id/buttonUser2"
+            android:layout_marginTop="10dp"
+            android:text="@string/user3" />
+
+        <Button
+            android:id="@+id/buttonUser4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/buttonUser3"
+            android:layout_below="@+id/buttonUser3"
+            android:layout_marginTop="10dp"
+            android:text="@string/user4" />
+
+        <Button
+            android:id="@+id/buttonUser5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/buttonUser4"
+            android:layout_below="@+id/buttonUser4"
+            android:layout_marginTop="10dp"
+            android:text="@string/user5" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textViewKindsTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="20dp"
+            android:text="コーヒーの種類" />
+
+        <Button
+            android:id="@+id/buttonHighValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewKindsTemp"
+            android:layout_alignStart="@+id/textViewKindsTemp"
+            android:layout_marginTop="20dp"
+            android:text="高いの" />
+
+        <Button
+            android:id="@+id/buttonLowValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/buttonHighValue"
+            android:layout_below="@+id/buttonHighValue"
+            android:layout_marginTop="10dp"
+            android:text="安いの" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textSizeTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="420dp"
+            android:layout_marginTop="20dp"
+            android:text="杯数" />
+
+        <Button
+            android:id="@+id/buttonSizeSmall1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textSizeTemp"
+            android:layout_marginStart="360dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/sizeSmall1" />
+
+        <Button
+            android:id="@+id/buttonSizeSmall2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/buttonSizeSmall1"
+            android:layout_below="@+id/buttonSizeSmall1"
+            android:layout_marginTop="10dp"
+            android:text="@string/sizeSmall2" />
+
+        <Button
+            android:id="@+id/buttonSizeSmall3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/buttonSizeSmall2"
+            android:layout_below="@+id/buttonSizeSmall2"
+            android:layout_marginTop="10dp"
+            android:text="@string/sizeSmall3" />
+
+        <Button
+            android:id="@+id/buttonSizeSmall4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/buttonSizeSmall3"
+            android:layout_below="@+id/buttonSizeSmall3"
+            android:layout_marginTop="10dp"
+            android:text="@string/sizeSmall4" />
+
+        <Button
+            android:id="@+id/buttonSizeSmall5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/buttonSizeSmall4"
+            android:layout_below="@+id/buttonSizeSmall4"
+            android:layout_marginTop="10dp"
+            android:text="@string/sizeSmall5" />
+
+        <Button
+            android:id="@+id/buttonSizeBig1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/buttonSizeSmall1"
+            android:layout_below="@+id/textSizeTemp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/sizeBig1" />
+
+        <Button
+            android:id="@+id/buttonSizeBig2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentTop="false"
+            android:layout_alignStart="@+id/buttonSizeBig1"
+            android:layout_below="@+id/buttonSizeBig1"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/sizeBig2" />
+
+        <Button
+            android:id="@+id/buttonSizeBig3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="false"
+            android:layout_alignStart="@+id/buttonSizeBig2"
+            android:layout_below="@+id/buttonSizeBig2"
+            android:layout_marginTop="10dp"
+            android:text="@string/sizeBig3" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textOrderTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="620dp"
+            android:layout_marginTop="20dp"
+            android:text="注文内容"
+            tools:layout_editor_absoluteX="583dp"
+            tools:layout_editor_absoluteY="28dp" />
+
+        <TextView
+            android:id="@+id/textUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textOrderTemp"
+            android:layout_below="@+id/textOrderTemp"
+            android:layout_marginTop="20dp"
+            android:text="ユーザ名" />
+
+        <TextView
+            android:id="@+id/textCoffeeKind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textOrderTemp"
+            android:layout_below="@+id/textUserName"
+            android:layout_marginTop="20dp"
+            android:text="コーヒーの種類" />
+
+        <TextView
+            android:id="@+id/textCoffeeSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textOrderTemp"
+            android:layout_below="@+id/textCoffeeKind"
+            android:layout_marginTop="20dp"
+            android:text="杯数" />
+
+        <TextView
+            android:id="@+id/textValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textOrderTemp"
+            android:layout_below="@+id/textCoffeeSize"
+            android:layout_marginTop="50dp"
+            android:text="合計金額" />
+
+        <TextView
+            android:id="@+id/textSum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textOrderTemp"
+            android:layout_below="@+id/textValue"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textValue"
+            android:layout_alignTop="@+id/textSum"
+            android:layout_marginEnd="-20dp"
+            android:text="円" />
+
+        <Button
+            android:id="@+id/buttonOrdering"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textOrderTemp"
+            android:layout_below="@+id/textValue"
+            android:layout_marginTop="150dp"
+            android:text="確定" />
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/buttonOrdering"
+            android:layout_marginStart="50dp"
+            android:text="戻る" />
+
+        <TextView
+            android:id="@+id/textview_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/buttonBack"
+            android:layout_alignTop="@+id/buttonBack"
+            android:layout_marginEnd="-200dp"
+            android:layout_marginTop="10dp"
+            android:text="TextView" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
