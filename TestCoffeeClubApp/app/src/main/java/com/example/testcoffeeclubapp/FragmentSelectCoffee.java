@@ -11,6 +11,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import static com.example.testcoffeeclubapp.FragmentSelectCoffee.defaultList.DEFAULT_COSTSUM;
+import static com.example.testcoffeeclubapp.FragmentSelectCoffee.defaultList.DEFAULT_USERNAME;
+
 public class FragmentSelectCoffee extends Fragment {
 
     private int cnt = 0;
@@ -45,7 +48,13 @@ public class FragmentSelectCoffee extends Fragment {
         public static final double SIZE_BIG = 1.5;
         public static final double SIZE_NONE = 0;
     }
-
+    public class defaultList{
+        private defaultList(){}
+        public static final String DEFAULT_USERNAME = "ユーザ名";
+        public static final float DEFAULT_COSTKIND = 0;
+        public static final double DEFAULT_COSTSIZE = 0;
+        public static final double DEFAULT_COSTSUM = 0;
+    }
     public static FragmentSelectCoffee newInstance(int count){
         // FragmentSelectCoffee インスタンス生成
         FragmentSelectCoffee fragment02 = new FragmentSelectCoffee();
@@ -169,11 +178,16 @@ public class FragmentSelectCoffee extends Fragment {
             textSum.setText(String.valueOf(costSum));
         }
     }
+
     class OrderBtClick implements View.OnClickListener{
         @Override
         public void onClick(View view) {
             switch (view.getId()) {
                 case R.id.buttonOrdering:
+                    if(textUser.getText().toString().equals(DEFAULT_USERNAME) || costSum == DEFAULT_COSTSUM){
+
+                        break;
+                    }
                     FragmentManager fragmentManager = getFragmentManager();
                     if(fragmentManager != null) {
                         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
@@ -181,11 +195,18 @@ public class FragmentSelectCoffee extends Fragment {
                         // BackStackを設定
                         fragmentTransaction.addToBackStack(null);
 
-                        fragmentTransaction.replace(R.id.container, FragmentSelectCoffeeConfirmation.newInstance(cnt));
+                        fragmentTransaction.replace(R.id.container, FragmentSelectCoffeeConfirmation.newInstance(
+                                cnt,
+                                textUser.getText().toString(),
+                                costKind,
+                                costSize,
+                                costSum,
+                                textKinds.getText().toString(),
+                                textSize.getText().toString(),
+                                textSum.getText().toString() ));
                         fragmentTransaction.commit();
                     }
                     break;
-
             }
         }
     }
@@ -249,7 +270,6 @@ public class FragmentSelectCoffee extends Fragment {
         costSize = costSizeList.SIZE_NONE;
         costSum = costKind * costSize;
         textSum.setText(String.valueOf(costSum));
-
 
     }
 }

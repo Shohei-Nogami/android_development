@@ -110,7 +110,7 @@
             tools:layout_editor_absoluteX="79dp" />
 
         <TextView
-            android:id="@+id/textChageMonth"
+            android:id="@+id/textChargeMonth"
             android:layout_width="300dp"
             android:layout_height="300dp"
             android:layout_alignStart="@+id/textChageMonthTemp"
@@ -144,6 +144,31 @@
             android:layout_marginStart="300dp"
             android:layout_marginTop="15dp"
             android:text="TextView" />
+
+        <Button
+            android:id="@+id/buttonshow"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView"
+            android:layout_marginStart="450dp"
+            android:layout_marginTop="100dp"
+            android:background="#05000000" />
+
+        <Button
+            android:id="@+id/buttondelete"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/buttonshow"
+            android:layout_marginTop="20dp"
+            android:background="#05000000" />
+
+        <TextView
+            android:id="@+id/textDebug"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/buttonshow"
+            android:layout_alignTop="@+id/buttonshow"
+            android:layout_marginTop="50dp" />
     </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>
